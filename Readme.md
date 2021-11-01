@@ -29,7 +29,7 @@ docker-compose stop
 Команды выполняются внутри запущенного контейнера приложения:
 
 ```bash
-docker-compose exec app bash
+docker-compose exec web bash
 ```
 
 #### Применение миграций:
