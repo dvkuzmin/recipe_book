@@ -1,0 +1,106 @@
+[
+  {
+    "model": "recipe.ingredient",
+    "pk": 1,
+    "fields": {
+      "name": "Яйца",
+      "dish": [1]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 2,
+    "fields": {
+      "name": "Сливочное масло",
+      "dish": [1, 2, 3]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 3,
+    "fields": {
+      "name": "Помидоры",
+      "dish": [1, 2]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 4,
+    "fields": {
+      "name": "Соль",
+      "dish": [1, 2, 3]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 5,
+    "fields": {
+      "name": "Лук",
+      "dish": [2]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 6,
+    "fields": {
+      "name": "Свинина",
+      "dish": [2]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 7,
+    "fields": {
+      "name": "Бекон",
+      "dish": [3]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 8,
+    "fields": {
+      "name": "Макароны",
+      "dish": [3]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 9,
+    "fields": {
+      "name": "Пармезан",
+      "dish": [3]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 10,
+    "fields": {
+      "name": "Яблоки",
+      "dish": [4]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 11,
+    "fields": {
+      "name": "Груши",
+      "dish": [4]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 12,
+    "fields": {
+      "name": "Апельсины",
+      "dish": [4]
+    }
+  },
+  {
+    "model": "recipe.ingredient",
+    "pk": 13,
+    "fields": {
+      "name": "Картошка",
+      "dish": [2]
+    }
+  }
+]

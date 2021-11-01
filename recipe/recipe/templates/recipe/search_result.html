@@ -1,0 +1,16 @@
+{% extends 'recipe/base.html' %}
+
+{% block content %}
+{% if dish_list %}
+<div class="content">
+<h1>Все блюда</h1>
+<ul class="ul-items">
+    {% for dish in dish_list %}
+    <li class="items"><center><a class="a-content" href="{% url 'recipe:dish_detail' dish.id %}">{{ dish.name }}</a></center></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p> Нет блюд </p>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'recipe/base.html' %}
+
+{% block content %}
+
+<div class="search-box">
+    <div class="container-1">
+    <form action="" method="get">
+        <input type="search" name="q" placeholder="Поиск..." required size="70">
+        <i class="fa fa-search"></i>
+    </form>
+    </div>
+</div>
+{% if ingredient or dish%}
+<div class="content">
+    <br>
+    <br>
+    <span>Результаты поиска: </span>
+    <br>
+    <br>
+    <ul class="ul-items">
+        {% for d in dish %}
+        <li class="items"><a class="a-content" href="{% url 'recipe:dish_detail' d.id %}">{{ d.name }}</a></li>
+        {% endfor %}
+        {% for i in ingredient %}
+        <li class="items"><a class="a-content" href="{% url 'recipe:ingredient_detail' i.id %}">{{ i.name }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% else %}
+<div class="content">
+<h1>Добро пожаловать на наш кулинарный сайт!</h1>
+<p>Здесь вы можете просмотреть рецепты для приготовления разнообразных блюд, которые отлично подойдут, как на завтрак,
+    так и на обед или ужин. Просто выберите интересующую Вас категорию.</p>
+</div>
+{% endif %}
+{% endblock %}
+
+

@@ -1,0 +1,30 @@
+{% extends 'recipe/base.html' %}
+
+{% block content %}
+{% if dish %}
+<div class="content">
+<h1>{{ dish.name }}</h1>
+<p>{{ dish.text }}</p>
+<ul><span>Вам понадобится:</span>
+    <br>
+    <br>
+    {% for ingredient in dish.ingredient_set.all %}
+        <li>{{ ingredient }} -
+            {% for amount in ingredient.amountofingredient_set.all %}
+                {% if amount.dish_id == dish.id %}
+                    {{ amount }} шт.
+                {% endif %}
+            {% endfor %}
+            {% for weight in ingredient.weightofingredient_set.all %}
+                {% if weight.dish_id == dish.id %}
+                    {{ weight }} грамм.
+                {% endif %}
+            {% endfor %}
+        </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p> Нет блюд </p>
+</div>
+{% endif %}
+{% endblock %}

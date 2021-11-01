@@ -1,0 +1,23 @@
+[
+  {
+    "model": "recipe.category",
+    "pk": 1,
+    "fields": {
+      "name": "Завтрак"
+    }
+  },
+  {
+    "model": "recipe.category",
+    "pk": 2,
+    "fields": {
+      "name": "Обед"
+    }
+  },
+  {
+    "model": "recipe.category",
+    "pk": 3,
+    "fields": {
+      "name": "Ужин"
+    }
+  }
+]

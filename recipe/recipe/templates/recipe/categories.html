@@ -1,0 +1,16 @@
+{% extends 'recipe/base.html' %}
+
+{% block content %}
+{% if category_list %}
+<div class="content">
+<h1>Список категорий</h1>
+<ul class="ul-items">
+    {% for category in category_list %}
+    <li class="items"><a class="a-content" href="{% url 'recipe:category_detail' category.id %}" >{{ category.name }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p> Нет категорий </p>
+</div>
+{% endif %}
+{% endblock %}

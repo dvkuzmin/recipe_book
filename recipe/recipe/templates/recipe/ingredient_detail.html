@@ -1,0 +1,22 @@
+{% extends 'recipe/base.html' %}
+
+{% block content %}
+{% if ingredient %}
+<div class="content">
+<h1>{{ ingredient.name }}</h1>
+<ul>
+    <li>{{ ingredient.name }}. Этот ингредиент можно встретить в таких блюдах, как:
+        {% for dish in ingredient.dish.all %}
+            {% if not forloop.last %}
+                <span> {{ dish }}, </span>
+            {% else %}
+                <span>{{ dish }}.</span>
+            {% endif %}
+        {% endfor %}
+    </li>
+</ul>
+{% else %}
+<p> Нет ингредиентов </p>
+</div>
+{% endif %}
+{% endblock %}

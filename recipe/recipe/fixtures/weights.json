@@ -1,0 +1,101 @@
+[
+  {
+    "model": "recipe.weightofingredient",
+    "pk": 1,
+    "fields": {
+      "weight": 20.0,
+      "dish": 1,
+      "ingredient": 4
+    }
+  },
+  {
+    "model": "recipe.weightofingredient",
+    "pk": 2,
+    "fields": {
+      "weight": 30.0,
+      "dish": 2,
+      "ingredient": 4
+    }
+  },
+    {
+    "model": "recipe.weightofingredient",
+    "pk": 3,
+    "fields": {
+      "weight": 20.0,
+      "dish": 3,
+      "ingredient": 4
+    }
+  },
+  {
+    "model": "recipe.weightofingredient",
+    "pk": 4,
+    "fields": {
+      "weight": 400.0,
+      "dish": 2,
+      "ingredient": 6
+    }
+  },
+  {
+    "model": "recipe.weightofingredient",
+    "pk": 5,
+    "fields": {
+      "weight": 400.0,
+      "dish": 3,
+      "ingredient": 7
+    }
+  },
+  {
+    "model": "recipe.weightofingredient",
+    "pk": 6,
+    "fields": {
+      "weight": 400.0,
+      "dish": 2,
+      "ingredient": 13
+    }
+  },
+  {
+    "model": "recipe.weightofingredient",
+    "pk": 7,
+    "fields": {
+      "weight": 50.0,
+      "dish": 1,
+      "ingredient": 2
+    }
+  },
+    {
+    "model": "recipe.weightofingredient",
+    "pk": 8,
+    "fields": {
+      "weight": 50.0,
+      "dish": 2,
+      "ingredient": 2
+    }
+  },
+  {
+    "model": "recipe.weightofingredient",
+    "pk": 9,
+    "fields": {
+      "weight": 50.0,
+      "dish": 3,
+      "ingredient": 2
+    }
+  },
+  {
+    "model": "recipe.weightofingredient",
+    "pk": 10,
+    "fields": {
+      "weight": 50.0,
+      "dish": 3,
+      "ingredient": 9
+    }
+  },
+  {
+    "model": "recipe.weightofingredient",
+    "pk": 11,
+    "fields": {
+      "weight": 200.0,
+      "dish": 3,
+      "ingredient": 8
+    }
+  }
+]
