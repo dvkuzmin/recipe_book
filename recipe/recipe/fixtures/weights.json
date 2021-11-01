@@ -46,15 +46,6 @@
   },
   {
     "model": "recipe.weightofingredient",
-    "pk": 6,
-    "fields": {
-      "weight": 400.0,
-      "dish": 2,
-      "ingredient": 13
-    }
-  },
-  {
-    "model": "recipe.weightofingredient",
     "pk": 7,
     "fields": {
       "weight": 50.0,
